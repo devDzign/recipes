@@ -1,25 +1,31 @@
 {
   "aliases": {
-    "inter-invest/api-keycloak-authenticator-bundle": {
-      "2": "2.0.5",
-      "2.0": "2.0.5"
-    },
     "mch/notification-bundle": {
       "mch/notification-bundle": "dev-master"
     }
   },
   "manifests": {
-    "inter-invest/api-keycloak-authenticator-bundle": {
-      "2.0.5": {
-        "manifest": "inter-invest/api-keycloak-authenticator-bundle/2.0.5/manifest.json",
-        "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
-      }
-    },
     "mch/notification-bundle": {
       "1.0": "mch/notification-bundle/1.0",
       "dev-master": "mch/notification-bundle/1.0",
       "dev-main": "mch/notification-bundle/1.0",
       "main": "mch/notification-bundle/1.0"
     }
+  },
+  "recipies": {
+    "mch/notification-bundle": {
+      "type": "symfony-bundle",
+      "description": "Symfony bundle for notification",
+      "require": {
+        "mch/notification-bundle": "1.0"
+      }
+    }
+  },
+  "branch": "main",
+  "is_contrib": true,
+  "_links": {
+    "repository": "github.com/devDzign/recipes",
+    "origin_template": "{package}:{version}@github.com/devDzign/recipes:main",
+    "recipe_template": "https://api.github.com/repos/ydevDzign/recipes/contents/{package_dotted}.{version}.json"
   }
 }
