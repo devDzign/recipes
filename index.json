@@ -4,8 +4,8 @@
       "2": "2.0.5",
       "2.0": "2.0.5"
     },
-    "mouradchab/notification-bundle": {
-      "mouradchab/notification-bundle": "dev-master"
+    "mch/notification-bundle": {
+      "mch/notification-bundle": "dev-master"
     }
   },
   "manifests": {
@@ -15,11 +15,10 @@
         "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
       }
     },
-    "mouradchab/notification-bundle": {
-      "1.0": {
-        "manifest": "mouradchab/notification-bundle/1.0/manifest.json",
-        "ref": "1010101010101010101010101010101010101010"
-      }
+    "mch/notification-bundle": {
+      "1.0": "mch/notification-bundle/1.0",
+      "dev-master": "mch/notification-bundle/1.0",
+      "main": "mch/notification-bundle/1.0"
     }
   }
 }
