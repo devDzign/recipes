@@ -1,11 +1,14 @@
 <bg=blue;fg=white>                                        </>
-<bg=blue;fg=white>  Notification Bundle Installed!        </>
+<bg=blue;fg=white>  Api Keycloak Authenticator installé !  </>
 <bg=blue;fg=white>                                        </>
 
-Next steps:
-  1. Configure your notification channels in config/packages/api_keycloak.yaml
-  2. Set environment variables in .env.local:
-     - NOTIFICATION_EMAIL_FROM
-     - NOTIFICATION_SLACK_WEBHOOK (if using Slack)
-     - NOTIFICATION_SMS_API_KEY (if using SMS)
-Read the documentation at https://github.com/acme/notification-bundle
+Étapes suivantes :
+  1. Vérifiez/ajustez la configuration copiée dans config/packages/api_keycloak_authenticator.yaml
+  2. Ajoutez les variables d'environnement dans votre .env.local :
+     - API_KEYCLOAK_URL
+     - KEYCLOAK_REALM_INTERINVEST_APPLICATION_CLIENT_ID
+     - KEYCLOAK_REALM_INTERINVEST_APPLICATION_CLIENT_SECRET
+     - KEYCLOAK_REALM_INTERINVEST_APPLICATION_GRANT_TYPE (par défaut: client_credentials)
+  3. En environnement de développement, la vérification SSL est désactivée par défaut via when@dev.
+
+Documentation : https://github.com/inter-invest/api-keycloak-authenticator-bundle
