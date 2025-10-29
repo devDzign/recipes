@@ -18,6 +18,7 @@
     "mch/notification-bundle": {
       "1.0": "mch/notification-bundle/1.0",
       "dev-master": "mch/notification-bundle/1.0",
+      "dev-main": "mch/notification-bundle/1.0",
       "main": "mch/notification-bundle/1.0"
     }
   }
