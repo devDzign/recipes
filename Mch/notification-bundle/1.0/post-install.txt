@@ -1,0 +1,14 @@
+<bg=blue;fg=white>                                        </>
+<bg=blue;fg=white>  Api Keycloak Authenticator installé !  </>
+<bg=blue;fg=white>                                        </>
+
+Étapes suivantes :
+  1. Vérifiez/ajustez la configuration copiée dans config/packages/api_keycloak_authenticator.yaml
+  2. Ajoutez les variables d'environnement dans votre .env.local :
+     - API_KEYCLOAK_URL
+     - KEYCLOAK_REALM_INTERINVEST_APPLICATION_CLIENT_ID
+     - KEYCLOAK_REALM_INTERINVEST_APPLICATION_CLIENT_SECRET
+     - KEYCLOAK_REALM_INTERINVEST_APPLICATION_GRANT_TYPE (par défaut: client_credentials)
+  3. En environnement de développement, la vérification SSL est désactivée par défaut via when@dev.
+
+Documentation : https://github.com/inter-invest/api-keycloak-authenticator-bundle

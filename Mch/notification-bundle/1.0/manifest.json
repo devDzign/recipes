@@ -1,0 +1,11 @@
+{
+  "bundles": {
+    "Mch\\NotificationBundle\\NotificationBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/packages/mc_notification.yaml": "%CONFIG_DIR%/packages/mc_notification.yaml"
+  },
+  "env": {
+    "MC_TEST": "https://keycloak.example.com"
+  }
+}
