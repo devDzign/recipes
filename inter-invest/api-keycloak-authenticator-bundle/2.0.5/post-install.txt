@@ -1,0 +1,11 @@
+<bg=blue;fg=white>                                        </>
+<bg=blue;fg=white>  Notification Bundle Installed!        </>
+<bg=blue;fg=white>                                        </>
+
+Next steps:
+  1. Configure your notification channels in config/packages/api_keycloak.yaml
+  2. Set environment variables in .env.local:
+     - NOTIFICATION_EMAIL_FROM
+     - NOTIFICATION_SLACK_WEBHOOK (if using Slack)
+     - NOTIFICATION_SMS_API_KEY (if using SMS)
+Read the documentation at https://github.com/acme/notification-bundle
