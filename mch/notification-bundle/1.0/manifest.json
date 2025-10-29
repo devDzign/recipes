@@ -1,0 +1,14 @@
+{
+  "bundles": {
+    "Mch\\NotificationBundle\\NotificationBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "post-install-output": [
+    "✅ NotificationBundle installed.",
+    "- The bundle has been enabled in config/bundles.php for all environments.",
+    "- A default configuration file was copied to config/packages/notification.yaml.",
+    "Edit this file to customize channels and transports."
+  ]
+}

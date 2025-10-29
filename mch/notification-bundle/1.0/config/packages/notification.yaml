@@ -1,0 +1,20 @@
+# Default configuration for Mouradchab NotificationBundle
+notification:
+  enabled: true
+  # Define the available channels (examples)
+  channels:
+    email:
+      enabled: true
+      from: 'no-reply@example.com'
+    sms:
+      enabled: false
+      provider: 'twilio'
+      auth_token: '%env(TWILIO_AUTH_TOKEN)%'
+    slack:
+      enabled: false
+      webhook_url: '%env(SLACK_WEBHOOK_URL)%'
+
+  # Global delivery options
+  delivery:
+    async: true
+    retries: 3
