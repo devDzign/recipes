@@ -1,0 +1,15 @@
+api_keycloak_authenticator:
+  baseUrl: '%env(resolve:API_KEYCLOAK_URL)%'
+  verifyPeer: true
+  verifyHost: true
+  claim: 'sub'
+  realms:
+    interinvest_applications_internes:
+      client_id: '%env(resolve:KEYCLOAK_REALM_INTERINVEST_APPLICATION_CLIENT_ID)%'
+      client_secret: '%env(resolve:KEYCLOAK_REALM_INTERINVEST_APPLICATION_CLIENT_SECRET)%'
+      grant_type: '%env(resolve:KEYCLOAK_REALM_INTERINVEST_APPLICATION_GRANT_TYPE)%'
+
+when@dev:
+  api_keycloak_authenticator:
+    verifyPeer: false
+    verifyHost: false
