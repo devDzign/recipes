@@ -1,6 +1,6 @@
 {
   "bundles": {
-    "InterInvest\\ApiKeycloakAuthenticatorBundle\\ApiKeycloakAuthenticatorBundle::class": ["all"]
+    "InterInvest\\ApiKeycloakAuthenticatorBundle\\ApiKeycloakAuthenticatorBundle": ["all"]
   },
   "copy-from-recipe" : {
     "config/" : "%CONFIG_DIR%/"
