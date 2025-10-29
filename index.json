@@ -1,7 +1,10 @@
 {
+  "aliases": {},
   "manifests": {
     "inter-invest/api-keycloak-authenticator-bundle": {
-      ">=1.0 <3.0": "recipes/inter-invest/api-keycloak-authenticator-bundle/2.0.5"
+      "2.0.5": {
+        "manifest": "inter-invest/api-keycloak-authenticator-bundle/2.0.5/manifest.json"
+      }
     }
   }
 }

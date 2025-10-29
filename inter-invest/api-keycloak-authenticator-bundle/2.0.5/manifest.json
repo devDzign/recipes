@@ -1,0 +1,18 @@
+{
+  "bundles": {
+    "InterInvest\\ApiKeycloakAuthenticatorBundle\\ApiKeycloakAuthenticatorBundle::class": ["all"]
+  },
+  "copy-from-recipe" : {
+    "config/" : "%CONFIG_DIR%/"
+  },
+  "env" : {
+    "API_PERMISSION_SCOPE": "INVESTISSEMENT",
+    "API_PERMISSION_URL":"http://permissions-backend",
+    "KEYCLOAK_REALM_INTERINVEST_APPLICATION_CLIENT_ID": "XXXXXXXX",
+    "KEYCLOAK_REALM_INTERINVEST_APPLICATION_CLIENT_SECRET": "XXXXXXXX",
+    "KEYCLOAK_REALM_INTERINVEST_APPLICATION_GRANT_TYPE": "client_credentials"
+  },
+  "gitignore" : [
+    ".notification-cache/"
+  ]
+}
